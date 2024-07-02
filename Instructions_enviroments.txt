@@ -1,0 +1,44 @@
+
+
+Para crear un ambiente en python, en la terminal nos vamos a la carpeta donde queremos crearlo y escribimos: 
+$ python3 -m venv nombreAmbiente
+
+Por ejemplo: 
+$ python3 -m venv envGame
+
+            +++++                   +++++
+
+Para activar el ambiente, estando en la carpeta de trabajo o directorio. 
+$ source nombreAmbiente/bin/activate
+
+Por ejemplo: 
+$ source envGame/bin/activate
+
+Esto devuelve el nombre del ambiente al inicioi de la linea de la terminal: 
+(envGame) usuario $
+
+            +++++                   +++++
+
+Para desactivar el ambiente escribmos. 
+$ deactivate
+
+En ocasiones es necesario anotar el nombre del ambiente y luegeo deactivate: 
+$ conda deactivate
+
+
+            +++++                   +++++
+
+Para crear el archivo requirements.txt, primero creamos dicho archivo con el listado de dependencias utilizadas en ese proyecto con pip3 freeze. El script es el siguiente 
+
+$ pip3 freeze > requirements.txt
+
+Luego, podemos invocarlo con una sola línea de comando para instalar las dependencias, evitando instalar cada una de estas dependencias, una por una: 
+
+$ pip3 install -r requirements.txt
+
+
+            +++++                   ++++++
+
+
+
+
